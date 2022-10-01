@@ -54,7 +54,8 @@
                     if (i < exp.Length - oper.Length - 2 && exp.Substring(i, oper.Length + 2) == $" {oper} ")
                     {
                         splitIndex1 = i;
-                        splitIndex2 = oper.Length + 2;
+                        splitIndex2 = i + oper.Length + 2;
+                        break;
                     }
                 }
             }
