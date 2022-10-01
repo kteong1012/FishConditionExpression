@@ -1,5 +1,4 @@
-﻿
-namespace FishConditionExpression
+﻿namespace FishConditionExpression
 {
     public static class ConditionHelper
     {
@@ -38,7 +37,7 @@ namespace FishConditionExpression
             int braceDepth = 0;
             int splitIndex1 = -1;
             int splitIndex2 = -1;
-            for (int i = 0; i < exp.Length; i++)
+            for (int i = exp.Length - 1; i >= 0; i--)
             {
                 if (exp[i] == '(')
                 {
@@ -68,7 +67,7 @@ namespace FishConditionExpression
         public static int GetMode(string expression)
         {
             int braceDepth = 0;
-            for (int i = 0; i < expression.Length; i++)
+            for (int i = expression.Length - 1; i >= 0; i--)
             {
                 if (expression[i] == '(')
                 {

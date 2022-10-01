@@ -1,5 +1,4 @@
-﻿
-namespace FishConditionExpression // Note: actual namespace depends on the project name.
+﻿namespace FishConditionExpression
 {
     public abstract class ACondition
     {
