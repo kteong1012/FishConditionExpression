@@ -6,7 +6,7 @@
   1. 目前只支持and和or操作符
   2. 间隔的符号是1个空格。
 
-##需自定义的部分：修改RawCondition的True方法实现即可
+## 需自定义的部分：修改RawCondition的True方法实现即可
 ```Csharp
     public class RawCondition : ACondition
     {
@@ -18,7 +18,7 @@
     }
 ```
 
-##使用方式
+## 使用方式
 ```Csharp
     var condition1 = ConditionHelper.ParseToConditon("(a and b) or b");
     Console.WriteLine(condition1.True());//返回False
