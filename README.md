@@ -23,6 +23,6 @@
     var condition1 = ConditionHelper.ParseToConditon("(a and b) or b");
     Console.WriteLine(condition1.True());//返回False
     
-    var condition2 = ConditionHelper.ParseToConditon("(a or b) and a");
+    var condition2 = ConditionHelper.ParseToConditon("a or b or a");
     Console.WriteLine(condition2.True());//返回True
 ```
